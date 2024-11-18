@@ -1,0 +1,105 @@
+<mvc:View controllerName="application1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:u="sap.ui.commons">
+    <Shell id="shell">
+        <App id="App">
+            <pages>
+                <Page id="page" showHeader="true" title="{i18n>title}">
+                    <subHeader>
+                        <Bar>
+                            <contentRight><Text text="Product Information"></Text></contentRight>
+                        </Bar>
+                    </subHeader>
+                    <content>
+                      <!-- <Button text="Click" press="onPressButton1"></Button>
+                        <Button text="Submit" press="onPressButton2"></Button>
+                        <Text id="idTxt"></Text>
+                        <Text text="name"></Text>
+                        <Input id="idName"/>
+                        <FlexBox alignItems="Start" justifyContent="Center"> 
+                            <Label text="EmpId"></Label>
+                            <Text text="{/EmpId}" class="formTxt"/>
+                        </FlexBox>
+                        <FlexBox alignItems="Start" justifyContent="Center"> 
+                            <Label text="Name"></Label>
+                            <Text text="{/Name}" class="formTxt"/>
+                        </FlexBox>
+                        <Table items="{path: '/items'}">
+                            <columns>
+                                <Column>
+                                    <Text text="EmpId"></Text>
+                                </Column>  
+                                <Column>
+                                    <Text text="Name"></Text>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{EmpId}"></Text> 
+                                        <Text text="{Name}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>  --> 
+                        <Table items="{productJSONModel>/ProductCollection}" mode="SingleSelectMaster" >
+                          <columns>
+                            <Column >
+                              <header>
+                                <Label text="ProductId">  </Label>
+                              </header>
+                            </Column> 
+                             <Column >
+                              <header>
+                                <Label text="Name">   </Label>
+                              </header>
+                            </Column>
+                             <Column >
+                              <header>
+                                <Label text="Category">   </Label>
+                              </header>
+                            </Column>
+                             <Column >
+                              <header>
+                                <Label text="Price">  </Label>
+                              </header>
+                            </Column>
+                             <Column >
+                              <header>
+                                <Label  text="Quantity" >  </Label>
+                              </header>
+                            </Column>
+                          </columns>
+                          <items>
+                            <ColumnListItem vAlign="Inherit">
+                               <cells>
+                                 <Text text="{productJSONModel>ProductId}"> 
+                                 </Text>
+                                 <Text text="{productJSONModel>Name}"> 
+                                 </Text>
+                                 <Text text="{productJSONModel>Category}"> 
+                                 </Text>
+                                 <Text text="{productJSONModel>Price}"> 
+                                 </Text>
+                                 <Text text="{productJSONModel>Quantity}"> 
+                                 </Text>
+                               </cells>
+                            </ColumnListItem>
+                          </items>
+                        </Table>
+                    </content>
+                  <footer>
+                    <Bar >
+                      <contentRight>
+                        <Button text="Get Model" press="GetJSONModel">                          
+                        </Button>
+                      </contentRight>
+                    </Bar>  
+                  </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
+
