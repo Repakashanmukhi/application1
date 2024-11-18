@@ -8,6 +8,14 @@
                 <Page id="page" showHeader="true" title="{i18n>title}">
                     <subHeader>
                         <Bar>
+
+
+
+
+
+
+
+                        
                             <contentRight><Text text="Product Information"></Text></contentRight>
                         </Bar>
                     </subHeader>
