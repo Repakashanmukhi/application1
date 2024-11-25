@@ -8,15 +8,7 @@
                 <Page id="page" showHeader="true" title="{i18n>title}">
                     <subHeader>
                         <Bar>
-
-
-
-
-
-
-
-                        
-                            <contentRight><Text text="Product Information"></Text></contentRight>
+                     <contentRight><Text text="Product Information"></Text></contentRight>
                         </Bar>
                     </subHeader>
                     <content>
@@ -100,7 +92,7 @@
                   <footer>
                     <Bar >
                       <contentRight>
-                        <Button text="Get Model" press="GetJSONModel">                          
+                        <Button text="Open" press="onOpenDialog">                          
                         </Button>
                       </contentRight>
                     </Bar>  
@@ -110,4 +102,3 @@
         </App>
     </Shell>
 </mvc:View>
-
